@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
@@ -6,8 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div>
       <nav>
-        <RouterLink to="/">Users</RouterLink>
-        <RouterLink to="/toDo">ToDos</RouterLink>
+        <RouterLink to="/home">List Task(s)</RouterLink>
+        <RouterLink to="/toDo">Create task</RouterLink>
       </nav>
     </div>
   </header>
@@ -15,7 +16,9 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped>
+<style>
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -50,4 +53,6 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+
+
 </style>

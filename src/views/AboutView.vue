@@ -1,6 +1,6 @@
 <template>
   <main>
-    <DynamicToDoForm title="List ToDos"/>
+    <DynamicToDoForm title="Create Task"/>
   </main>
 </template>
 
